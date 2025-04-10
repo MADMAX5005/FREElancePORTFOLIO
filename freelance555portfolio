@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Freelance Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 0; }
+    header { background: #111; color: #fff; padding: 20px; text-align: center; }
+    section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
+    h2 { color: #333; }
+    .portfolio-item { margin-bottom: 15px; padding: 10px; border-left: 4px solid #0077ff; }
+    .btn { display: inline-block; padding: 10px 15px; background: #0077ff; color: white; border-radius: 5px; text-decoration: none; }
+    form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name - Freelance Work & Courses</h1>
+  </header>
+
+  <section>
+    <h2>My Freelance Projects</h2>
+    <div class="portfolio-item">
+      <strong>Video Editing for XYZ Influencer</strong><br/>
+      Edited 20+ reels with trending transitions and subtitles.
+    </div>
+    <div class="portfolio-item">
+      <strong>Social Media Management - ABC Brand</strong><br/>
+      Managed Instagram & posted daily content for 3 months.
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section>
+    <h2>Enroll in My Video Editing Course</h2>
+    <p>Learn mobile editing (CapCut/VN) from scratch to freelance level. Only ₹499!</p>
+    <p>Scan & Pay via UPI below, then fill the form to get course access:</p>
+    <img src="your-upi-qr.png" alt="UPI QR Code" width="200" /><br/>
+    <strong>UPI ID:</strong> yourupi@upi
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="payment" placeholder="Payment Ref. ID or Screenshot Link" required></textarea>
+      <button class="btn" type="submit">Register & Get Access</button>
+    </form>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; font-size: 14px; color: #666;">
+    &copy; 2025 Your Name. All Rights Reserved.
+  </footer>
+</body>
+</html>
